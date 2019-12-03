@@ -1,6 +1,6 @@
 sudo: required
 services: -docker
 
-before_install: -docker build -t abassadey/docker-react -f Dockerfile.dev .
+before_install: - docker build -t abassadey/docker-react -f Dockerfile.dev .
 
-script: -docker run abassadey/docker-react npm run test -- --coverage
+script: - docker run abassadey/docker-react npm run test -- --coverage
